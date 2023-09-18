@@ -10,4 +10,4 @@ app.use("/public", express.static("public"));
 
 app.use("/todo", todoRouter);
 
-app.listen("https://encuesta-servidor-fco.netlify.app/", console.log("Server escuchando"));
+app.listen("https://encuesta-servidor-fco.netlify.app", console.log("Server escuchando"));
