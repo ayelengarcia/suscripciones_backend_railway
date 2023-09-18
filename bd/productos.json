@@ -1,0 +1,182 @@
+[
+  {
+    "titulo": "PROTECTOR LEVE PLENITUD FEMME ANTIBACTERIAL",
+    "descripción": "Protector para pérdidas leves de orina. Absorbe hasta 40gr.",
+    "imagen": "http://127.0.0.1:8080/public/protector-fem.webp",
+    "marca": "Plenitud",
+    "EAN": "7794626010842",
+    "tipo": "Protector",
+    "incontinencia": ["Leve", "Moderada", "Fuerte"],
+    "genero": ["FEMENINO"],
+    "talle": ["M", "G", "XG"]
+  },
+  {
+    "titulo": "PROTECTOR PLENITUD ESENCIAL",
+    "descripción": "Protector para pérdidas leves de orina. Absorbe hasta 40gr.",
+    "imagen": "http://127.0.0.1:8080/public/protector-unisex.webp",
+    "marca": "Plenitud",
+    "EAN": "7794626011498",
+    "tipo": "Protector",
+    "incontinencia": ["Leve", "Moderada", "Fuerte"],
+    "genero": ["MASCULINO"],
+    "talle": ["M", "G", "XG"]
+  },
+
+  {
+    "titulo": "TOALLA NORMAL PLUS PLENITUD FEMME ANTIBACTERIAL",
+    "descripción": "Toalla para Incontinencia Plenitud Femme Normal Plus Antibacterial. Toalla para pérdidas frecuentes de orina. Absorbe hasta 120gr.",
+    "imagen": "http://127.0.0.1:8080/public/toalla-leve.webp",
+    "marca": "Plenitud",
+    "EAN": "7794626010880",
+    "tipo": "Toalla",
+    "incontinencia": ["Leve"],
+    "genero": ["FEMENINO", "MASCULINO"],
+    "talle": ["M", "G", "XG"]
+  },
+  {
+    "titulo": "TOALLA ULTRA PLENITUD FEMME",
+    "descripción": "Toalla para Incontinencia Plenitud Femme Ultra Sin Alas Antibacterial. Toalla para pérdidas abundantes de orina. Absorbe hasta 235gr.",
+    "imagen": "http://127.0.0.1:8080/public/toalla-moderada.webp",
+    "marca": "Plenitud",
+    "EAN": "7441008155386",
+    "tipo": "Toalla",
+    "incontinencia": ["Moderada"],
+    "genero": ["FEMENINO", "MASCULINO"],
+    "talle": ["M", "G", "XG"]
+  },
+  {
+    "titulo": "TOALLA ADULTOS PLENITUD FEMME NOCT ANTIBACTERIAL",
+    "descripción": "Toalla Incontinencia Plenitud Femme Nocturna Sin Alas Antibacterial. Toalla para pérdidas abundantes de orina. Absorbe hasta 380gr.",
+    "imagen": "http://127.0.0.1:8080/public/toalla-fuerte.webp",
+    "marca": "Plenitud",
+    "EAN": "7794626011504",
+    "tipo": "Toalla",
+    "incontinencia": ["Fuerte"],
+    "genero": ["FEMENINO", "MASCULINO"],
+    "talle": ["M", "G", "XG"]
+  },
+
+  {
+    "titulo": "APÓSITO PLENITUD",
+    "descripción": "El apósito Plenitud posee una delicada cubierta con Aloe Vera para mayor cuidado de la piel. Además cuenta con la tecnología Block Gel que absorbe y gelatiniza los líquidos.",
+    "imagen": "http://127.0.0.1:8080/public/aposito.webp",
+    "marca": "Plenitud",
+    "EAN": "7794626011252",
+    "tipo": "Apósito",
+    "incontinencia": ["Leve", "Moderada", "Fuerte"],
+    "genero": ["FEMENINO", "MASCULINO"],
+    "talle": ["M", "G", "XG"]
+  },
+
+  {
+    "titulo": "Pañal Adulto Plenitud Classic Mediano",
+    "descripción": "Pañal desechable para adultos con incontinecia intensa.",
+    "imagen": "http://127.0.0.1:8080/public/panal-mediano-moderada.webp",
+    "marca": "Plenitud",
+    "EAN": "7794626011115",
+    "tipo": "Panal",
+    "incontinencia": ["Leve", "Moderada"],
+    "genero": ["FEMENINO", "MASCULINO"],
+    "talle": ["M"]
+  },
+  {
+    "titulo": "Pañal Adulto Plenitud Classic Grande",
+    "descripción": "Pañal desechable para adultos con incontinecia intensa.",
+    "imagen": "http://127.0.0.1:8080/public/panal-grande-moderada.webp",
+    "marca": "Plenitud",
+    "EAN": "7794626011122",
+    "tipo": "Panal",
+    "incontinencia": ["Leve", "Moderada"],
+    "genero": ["FEMENINO", "MASCULINO"],
+    "talle": ["G"]
+  },
+  {
+    "titulo": "Pañal Adulto Plenitud Classic Extra Grande",
+    "descripción": "Pañal desechable para adultos con incontinecia intensa.",
+    "imagen": "http://127.0.0.1:8080/public/panal-Xgrande-moderada.webp",
+    "marca": "Plenitud",
+    "EAN": "7794626011238",
+    "tipo": "Panal",
+    "incontinencia": ["Leve", "Moderada"],
+    "genero": ["FEMENINO", "MASCULINO"],
+    "talle": ["XG"]
+  },
+  {
+    "titulo": "PAÑAL Protect  PLENITUD. Talle M",
+    "descripción": "Pañal desechable para adultos con incontinecia intensa, con centro súper absorbente que previene los derrames.",
+    "imagen": "http://127.0.0.1:8080/public/panal-mediano-fuerte.webp",
+    "marca": "Plenitud",
+    "EAN": "7794626011153",
+    "tipo": "Panal",
+    "incontinencia": ["Fuerte"],
+    "genero": ["FEMENINO", "MASCULINO"],
+    "talle": ["M"]
+  },
+  {
+    "titulo": "PAÑAL Protect  PLENITUD. Talle G",
+    "descripción": "Pañal desechable para adultos con incontinecia intensa, con centro súper absorbente que previene los derrames.",
+    "imagen": "http://127.0.0.1:8080/public/panal-grande-fuerte.webp",
+    "marca": "Plenitud",
+    "EAN": "7794626011184",
+    "tipo": "Panal",
+    "incontinencia": ["Fuerte"],
+    "genero": ["FEMENINO", "MASCULINO"],
+    "talle": ["G"]
+  },
+  {
+    "titulo": "PAÑAL Protect  PLENITUD. Talle XG",
+    "descripción": "Pañal desechable para adultos con incontinecia intensa, con centro súper absorbente que previene los derrames.",
+    "imagen": "http://127.0.0.1:8080/public/panal-Xgrande-fuerte.webp",
+    "marca": "Plenitud",
+    "EAN": "7794626011191",
+    "tipo": "Panal",
+    "incontinencia": ["Fuerte"],
+    "genero": ["FEMENINO", "MASCULINO"],
+    "talle": ["XG"]
+  },
+
+  {
+    "titulo": "ROPA INTERIOR FEMME PANT",
+    "descripción": "La ropa interior Plenitud es más cómoda y discreta y está diseñada para personas que tienen pérdidas moderadas de orina. Elaborada con lycra, se siente y ajusta como tu ropa interior, sin perder la máxima absorción de siempre.",
+    "imagen": "http://127.0.0.1:8080/public/R-INTERIOR-MUJER-M.webp",
+    "marca": "Plenitud",
+    "EAN": "7794626011818",
+    "tipo": "Ropa Interior Descartable",
+    "incontinencia": ["Leve", "Moderada"],
+    "genero": ["FEMENINO"],
+    "talle": ["M"]
+  },
+  {
+    "titulo": "ROPA INTERIOR FEMME PANT",
+    "descripción": "La ropa interior Plenitud es más cómoda y discreta y está diseñada para personas que tienen pérdidas moderadas de orina. Elaborada con lycra, se siente y ajusta como tu ropa interior, sin perder la máxima absorción de siempre.",
+    "imagen": "http://127.0.0.1:8080/public/R-INTERIOR-MUJER-G-XG.webp",
+    "marca": "Plenitud",
+    "EAN": "7794626011825",
+    "tipo": "Ropa Interior Descartable",
+    "incontinencia": ["Leve", "Moderada"],
+    "genero": ["FEMENINO"],
+    "talle": ["G", "XG"]
+  },
+  {
+    "titulo": "ROPA INTERIOR DESECHABLE PLENITUD PROTECT PLUS",
+    "descripción": "La ropa interior desechable para incontinencias Plenitud Protect Plus brinda mejor protección y comodidad. Cuenta con cintura elástica con toque de algodón y control de olores.",
+    "imagen": "http://127.0.0.1:8080/public/R-INTERIOR-Mediana.webp",
+    "marca": "Plenitud",
+    "EAN": "7896007547128",
+    "tipo": "Ropa Interior Descartable",
+    "incontinencia": ["Leve", "Moderada", "Fuerte"],
+    "genero": ["FEMENINO", "MASCULINO"],
+    "talle": ["M"]
+  },
+  {
+    "titulo": "ROPA INTERIOR DESECHABLE PLENITUD PROTECT PLUS",
+    "descripción": "La ropa interior desechable para incontinencias Plenitud Protect Plus brinda mejor protección y comodidad. Cuenta con cintura elástica con toque de algodón y control de olores.",
+    "imagen": "http://127.0.0.1:8080/public/R-INTERIOR-G-XG.webp",
+    "marca": "Plenitud",
+    "EAN": "7896007547173",
+    "tipo": "Ropa Interior Descartable",
+    "incontinencia": ["Leve", "Moderada", "Fuerte"],
+    "genero": ["FEMENINO", "MASCULINO"],
+    "talle": ["G", "XG"]
+  }
+]
