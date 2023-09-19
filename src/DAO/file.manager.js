@@ -5,11 +5,11 @@ class FileManager {
     this.filename = filename;
   }
 
-  getNextId = (list) => {
+  getNextId (list) {
     return list.length == 0 ? 1 : list[list.length - 1].id + 1;
   };
 
-  get = async () => {
+  async get() {
     return fs.promises
       .readFile(this.filename, "utf-8")
       .then((r) => JSON.parse(r))
@@ -18,7 +18,7 @@ class FileManager {
       });
   };
 
-  getById = async (id) => {
+  async getById (id) {
     const data = await this.get();
     return data.find((d) => d.id == id);
   };
@@ -32,7 +32,7 @@ class FileManager {
       .then((r) => data);
   };
 
-  update = async (data) => {
+  async update (data) {
     const list = await this.get();
     const idx = list.findIndex((a) => a.id == data.id);
     list[idx] = data;
@@ -42,7 +42,7 @@ class FileManager {
       .then((r) => data);
   };
 
-  delete = async (id) => {
+  async delete (id) {
     const list = await this.get();
     const idx = list.findIndex((a) => a.id == id);
     list.splice(idx, 1);
