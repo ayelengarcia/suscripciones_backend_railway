@@ -1,6 +1,6 @@
-import express from "express";
-import todoRouter from "./src/routes/todo.router.js";
-import cors from "cors";
+const express = require("express");
+const todoRouter = require("./src/routes/todo.router.js");
+const cors = require("cors");
 
 const app = express();
 app.use(cors());
@@ -10,4 +10,7 @@ app.use("/public", express.static("public"));
 
 app.use("/todo", todoRouter);
 
-app.listen("3000", console.log("Puerto 3000 escuchando"));
+app.listen(8080, () => {
+  console.log("Puerto 8080 escuchando");
+});
+

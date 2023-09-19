@@ -1,22 +1,24 @@
-import FileManager from "./file.manager.js";
+const FileManager = require("./file.manager.js");
 
-export default class ProductManager extends FileManager {
+class ProductManager extends FileManager {
   constructor() {
     super("./bd/data.json");
   }
 
-  create = async (data) => {
+  async create(data) {
     const result = await this.set(data);
     return result;
-  };
+  }
 
-  list = async () => {
+  async list() {
     const result = await this.get();
     return result;
-  };
+  }
 
-  getById = async (id) => {
-    const result = await this.getById(id);
+  async getById(id) {
+    const result = await super.getById(id);
     return result;
-  };
+  }
 }
+
+module.exports = ProductManager;
