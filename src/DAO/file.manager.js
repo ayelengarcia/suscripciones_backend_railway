@@ -23,7 +23,7 @@ class FileManager {
     return data.find((d) => d.id == id);
   };
 
-  set = async (data) => {
+  async set (data) {
     const list = await this.get();
     data.id = this.getNextId(list);
     list.push(data);
