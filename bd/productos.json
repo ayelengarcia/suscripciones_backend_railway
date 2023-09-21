@@ -57,20 +57,20 @@
   },
 
   {
-    "titulo": "APÓSITO PLENITUD",
+    "titulo": "APOSITO PLENITUD",
     "descripción": "El apósito Plenitud posee una delicada cubierta con Aloe Vera para mayor cuidado de la piel. Además cuenta con la tecnología Block Gel que absorbe y gelatiniza los líquidos.",
     "imagen": "https://suscripciones-encuesta-back.onrender.com/public/aposito.webp",
     "marca": "Plenitud",
     "EAN": "7794626011252",
-    "tipo": "Apósito",
+    "tipo": "Aposito",
     "incontinencia": ["Leve", "Moderada", "Fuerte"],
     "genero": ["FEMENINO", "MASCULINO"],
     "talle": ["M", "G", "XG"]
   },
 
   {
-    "titulo": "Pañal Adulto Plenitud Classic Mediano",
-    "descripción": "Pañal desechable para adultos con incontinecia intensa.",
+    "titulo": "Panal Adulto Plenitud Classic Mediano",
+    "descripción": "Panal desechable para adultos con incontinecia intensa.",
     "imagen": "https://suscripciones-encuesta-back.onrender.com/public/panal-mediano-moderada.webp",
     "marca": "Plenitud",
     "EAN": "7794626011115",
@@ -80,8 +80,8 @@
     "talle": ["M"]
   },
   {
-    "titulo": "Pañal Adulto Plenitud Classic Grande",
-    "descripción": "Pañal desechable para adultos con incontinecia intensa.",
+    "titulo": "Panal Adulto Plenitud Classic Grande",
+    "descripción": "Panal desechable para adultos con incontinecia intensa.",
     "imagen": "https://suscripciones-encuesta-back.onrender.com/public/panal-grande-moderada.webp",
     "marca": "Plenitud",
     "EAN": "7794626011122",
@@ -91,8 +91,8 @@
     "talle": ["G"]
   },
   {
-    "titulo": "Pañal Adulto Plenitud Classic Extra Grande",
-    "descripción": "Pañal desechable para adultos con incontinecia intensa.",
+    "titulo": "Panal Adulto Plenitud Classic Extra Grande",
+    "descripción": "Panal desechable para adultos con incontinecia intensa.",
     "imagen": "https://suscripciones-encuesta-back.onrender.com/public/panal-Xgrande-moderada.webp",
     "marca": "Plenitud",
     "EAN": "7794626011238",
@@ -102,8 +102,8 @@
     "talle": ["XG"]
   },
   {
-    "titulo": "PAÑAL Protect  PLENITUD. Talle M",
-    "descripción": "Pañal desechable para adultos con incontinecia intensa, con centro súper absorbente que previene los derrames.",
+    "titulo": "Panal Protect  PLENITUD. Talle M",
+    "descripción": "Panal desechable para adultos con incontinecia intensa, con centro súper absorbente que previene los derrames.",
     "imagen": "https://suscripciones-encuesta-back.onrender.com/public/panal-mediano-fuerte.webp",
     "marca": "Plenitud",
     "EAN": "7794626011153",
@@ -113,8 +113,8 @@
     "talle": ["M"]
   },
   {
-    "titulo": "PAÑAL Protect  PLENITUD. Talle G",
-    "descripción": "Pañal desechable para adultos con incontinecia intensa, con centro súper absorbente que previene los derrames.",
+    "titulo": "Panal Protect  PLENITUD. Talle G",
+    "descripción": "Panal desechable para adultos con incontinecia intensa, con centro súper absorbente que previene los derrames.",
     "imagen": "https://suscripciones-encuesta-back.onrender.com/public/panal-grande-fuerte.webp",
     "marca": "Plenitud",
     "EAN": "7794626011184",
@@ -124,8 +124,8 @@
     "talle": ["G"]
   },
   {
-    "titulo": "PAÑAL Protect  PLENITUD. Talle XG",
-    "descripción": "Pañal desechable para adultos con incontinecia intensa, con centro súper absorbente que previene los derrames.",
+    "titulo": "Panal Protect  PLENITUD. Talle XG",
+    "descripción": "Panal desechable para adultos con incontinecia intensa, con centro súper absorbente que previene los derrames.",
     "imagen": "https://suscripciones-encuesta-back.onrender.com/public/panal-Xgrande-fuerte.webp",
     "marca": "Plenitud",
     "EAN": "7794626011191",
