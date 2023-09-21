@@ -1,4 +1,4 @@
-import FileManager from "./file.manager.js";
+const FileManager = require("./file.manager.js");
 
 class TodoManager extends FileManager {
   constructor() {
@@ -21,4 +21,4 @@ class TodoManager extends FileManager {
   }
 }
 
-export default TodoManager;
+module.exports = TodoManager;
