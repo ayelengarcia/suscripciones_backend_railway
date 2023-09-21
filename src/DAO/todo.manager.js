@@ -1,6 +1,6 @@
-const FileManager = require("./file.manager.js");
+import FileManager from "./file.manager.js";
 
-class ProductManager extends FileManager {
+class TodoManager extends FileManager {
   constructor() {
     super("./bd/data.json");
   }
@@ -21,4 +21,4 @@ class ProductManager extends FileManager {
   }
 }
 
-module.exports = ProductManager;
+export default TodoManager;

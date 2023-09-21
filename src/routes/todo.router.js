@@ -1,6 +1,6 @@
-const { Router } = require("express");
-const Todo = require("../DAO/todo.manager.js");
-const Productos = require("../DAO/productos.manager.js");
+import { Router } from "express";
+import Todo from "../DAO/todo.manager.js";
+import Productos from "../DAO/productos.manager.js";
 
 const router = Router();
 const todo = new Todo();
@@ -49,4 +49,4 @@ router.delete("/:id", (req, res) => {
   });
 });
 
-module.exports = router;
+export default router;

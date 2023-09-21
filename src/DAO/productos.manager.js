@@ -1,4 +1,4 @@
-const FileManager = require("./file.manager.js");
+import FileManager from "./file.manager.js";
 
 class ProductManager extends FileManager {
   constructor() {
@@ -11,5 +11,5 @@ class ProductManager extends FileManager {
   }
 }
 
-module.exports = ProductManager;
+export default ProductManager;
 

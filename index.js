@@ -1,9 +1,9 @@
-const express = require("express");
-const todoRouter = require("./src/routes/todo.router.js");
-const cors = require("cors");
+import express from "express";
+import todoRouter from "./src/routes/todo.router.js";
+import cors from "cors";
 
 const app = express();
-const PORT = PROCESS.ENV.PORT || 8080
+const PORT = process.env.PORT || 8080
 
 app.use(cors());
 app.use(express.json());

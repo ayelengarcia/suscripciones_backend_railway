@@ -1,4 +1,4 @@
-const fs = require("fs");
+import fs from "fs";
 
 class FileManager {
   constructor(filename = "./bd/bd.json") {
@@ -51,4 +51,4 @@ class FileManager {
   };
 }
 
-module.exports = FileManager;
+export default FileManager;
