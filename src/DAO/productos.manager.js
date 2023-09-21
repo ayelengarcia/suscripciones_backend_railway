@@ -2,7 +2,7 @@ const FileManager = require("./file.manager.js");
 
 class ProductManager extends FileManager {
   constructor() {
-    super("./productos.json");
+    super("./bd/productos.json");
   }
 
   async list() {

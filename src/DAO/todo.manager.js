@@ -2,7 +2,7 @@ const FileManager = require("./file.manager.js");
 
 class TodoManager extends FileManager {
   constructor() {
-    super("./data.json");
+    super("./bd/data.json");
   }
 
   async create(data) {
