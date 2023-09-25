@@ -1,52 +1,91 @@
 const { Router } = require("express");
-const Todo = require("../DAO/todo.manager.js");
-const Productos = require("../DAO/productos.manager.js");
+const ProductModel = require("../DAO/models/productos.model.js");
+const ListaModel = require("../DAO//models/lista.model.js");
 
 const router = Router();
-const todo = new Todo();
-const productos = new Productos();
 
 
-// http://127.0.0.1:8080/todo/productos
-router.get("/productos", (req, res) => {
-  productos.list().then((r) => {
-    res.json(r);
-  });
+//API PRODUCTOS // http://127.0.0.1:8080/todo/productos
+//MONGO
+router.get("/productos", async (req, res) => {
+  try {
+    const productos = await ProductModel.find();
+    res.json(productos);
+  } catch (error) {
+    res.status(500).json({ error: "Error al obtener productos" });
+  }
+});
+
+router.post("/productos", async (req, res) => {
+  try {
+    const nuevoProducto = new ProductModel(req.body);
+    const productoGuardado = await nuevoProducto.save();
+    res.json(productoGuardado);
+  } catch (error) {
+    res.status(500).json({ error: "Error al crear un producto" });
+  }
 });
 
 
-// http://127.0.0.1:8080/todo
-router.get("/", (req, res) => {
-  todo.list().then((r) => {
-    res.json(r);
-  });
+//API LISTA //http://127.0.0.1:8080/todo
+//MONGO
+router.get("/", async (req, res) => {
+  try {
+    const lista = await ListaModel.find();
+    res.json(lista);
+  } catch (error) {
+    res.status(500).json({ error: "Error al obtener la lista" });
+  }
 });
 
-router.post("/", (req, res) => {
-  todo.create(req.body).then((r) => {
-    res.json(r);
-  });
+router.post("/", async (req, res) => {
+  try {
+    const nuevaLista = new ListaModel(req.body);
+    const listaGuardada = await nuevaLista.save();
+    res.json(listaGuardada);
+  } catch (error) {
+    res.status(500).json({ error: "Error al crear una lista" });
+  }
 });
 
-router.get("/:id", (req, res) => {
-  todo.getById(req.params.id).then((r) => {
-    res.json(r);
-  });
+router.get("/:id", async (req, res) => {
+  try {
+    const id = req.params.id;
+    const lista = await ListaModel.findById(id);
+    if (!lista) {
+      return res.status(404).json({ error: "Elemento no encontrado" });
+    }
+    res.json(lista);
+  } catch (error) {
+    res.status(500).json({ error: "Error al obtener el elemento" });
+  }
 });
 
-router.put("/:id", (req, res) => {
-  const todoBody = req.body;
-  todoBody.id = parseInt(req.params.id);
-
-  todo.update(todoBody).then((r) => {
-    res.json(r);
-  });
+router.put("/:id", async (req, res) => {
+  try {
+    const id = req.params.id;
+    const updatedData = req.body;
+    const lista = await ListaModel.findByIdAndUpdate(id, updatedData, { new: true });
+    if (!lista) {
+      return res.status(404).json({ error: "Elemento no encontrado" });
+    }
+    res.json(lista);
+  } catch (error) {
+    res.status(500).json({ error: "Error al actualizar el elemento" });
+  }
 });
 
-router.delete("/:id", (req, res) => {
-  todo.delete(req.params.id).then((r) => {
-    res.json(r);
-  });
+router.delete("/:id", async (req, res) => {
+  try {
+    const id = req.params.id;
+    const lista = await ListaModel.findByIdAndRemove(id);
+    if (!lista) {
+      return res.status(404).json({ error: "Elemento no encontrado" });
+    }
+    res.json({ message: "Elemento eliminado correctamente" });
+  } catch (error) {
+    res.status(500).json({ error: "Error al eliminar el elemento" });
+  }
 });
 
 module.exports = router;
