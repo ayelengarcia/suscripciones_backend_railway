@@ -1,9 +1,8 @@
-const { Router } = require("express");
-const ProductModel = require("../DAO/models/productos.model.js");
-const ListaModel = require("../DAO//models/lista.model.js");
+import { Router } from "express";
+import ProductModel from "../DAO/models/productos.model.js";
+import ListaModel from "../DAO//models/lista.model.js";
 
 const router = Router();
-
 
 //API PRODUCTOS // http://127.0.0.1:8080/todo/productos
 //MONGO
@@ -88,4 +87,4 @@ router.delete("/:id", async (req, res) => {
   }
 });
 
-module.exports = router;
+export default router;

@@ -1,4 +1,4 @@
-const mongoose = require("mongoose");
+import mongoose from "mongoose";
 
 const respuestaSchema = new mongoose.Schema({
   fecha: {
@@ -51,4 +51,4 @@ const listaSchema = new mongoose.Schema({
 
 const ListaModel = mongoose.model("lista", listaSchema);
 
-module.exports = ListaModel;
+export default ListaModel;

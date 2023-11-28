@@ -2,12 +2,9 @@ const express = require("express");
 const todoRouter = require("./src/routes/todo.router.js");
 const cors = require("cors");
 const mongoose = require("mongoose");
+const config = require("./src/config/config.js")
 
 const app = express();
-const PORT = process.env.PORT || 8080
-const dbName = "DBsuscripciones";
-const URL =
-  "mongodb+srv://ayelengarcia7:eIXUnjHpOu7NgSKF@clustercoder.t6a33ln.mongodb.net/?retryWrites=true&w=majority";
 
 app.use(cors());
 app.use(express.json());
@@ -18,9 +15,9 @@ app.use("/todo", todoRouter);
 
 mongoose.set("strictQuery", false);
 
-mongoose.connect(URL, {dbName: dbName})
+mongoose.connect(config.dbURL, {dbName: config.dbName})
 .then(()=>{
-  app.listen(PORT, () => {
+  app.listen(config.port, () => {
     console.log("Puerto 8080 escuchando");
   })
 })
