@@ -10,7 +10,8 @@ const respuestaSchema = new mongoose.Schema({
       const year = now.getFullYear().toString();
       const hours = now.getHours().toString().padStart(2, "0");
       const minutes = now.getMinutes().toString().padStart(2, "0");
-      return `${day}/${month}/${year} ${hours}:${minutes}`;
+      const seconds = now.getSeconds().toString().padStart(2, "0");
+      return `${day}/${month}/${year} ${hours}:${minutes}:${seconds}`;
     },
   },
   nombre: String,
